@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>easyP快速出图</h1>
+    <h1>easyP约饭快速出图</h1>
     <h3>前端没有做图像处理功能，图片调整好之后手动截图保存</h3>
 
     <!-- <el-button @click="test_button">test</el-button> -->
@@ -44,7 +44,7 @@
 
 
     <!-- 折叠栏图元选择 -->
-    <el-collapse accordion>
+    <el-collapse>
 
       <el-collapse-item name="1">
         <template #title>
