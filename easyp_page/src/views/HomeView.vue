@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>easyP约饭快速出图</h1>
-    <h3>前端没有做图像处理功能，图片调整好之后手动截图保存</h3>
+    <h3>前端没有图像处理功能，图片调整好之后手动截图保存</h3>
 
     <!-- <el-button @click="test_button">test</el-button> -->
 
@@ -91,6 +91,7 @@
       <h6>2.前端直接生成合成后的图片</h6>
       <h6>3.开一个图床存放更多的图</h6>
       <h6>4.上传自定义图片</h6>
+      <h6>5.适配手机</h6>
 
       <div>
         umas@2023
@@ -103,13 +104,29 @@
 
 
 <script lang="ts" setup>
-import { ref, Ref } from "vue"
+import { ref, Ref ,onMounted} from "vue"
 
 
 import index_base from "@/assets/index_base.json"
 import index_item_eat from "@/assets/index_item_eat.json"
 import index_item_play from "@/assets/index_item_play.json"
 
+
+// 显示模式切换(横屏/竖屏)
+const ishandy = ref(false)
+// 初始化图片宽度
+onMounted(() => {
+  console.log(window.innerWidth)
+  if (window.innerWidth < 1000) {
+    ishandy.value = true
+    let silder_box = window.document.querySelector(".slider-box");
+    (silder_box as HTMLElement).style.width="100%"
+    let result_box = window.document.querySelector(".result");
+    (result_box as HTMLElement).style.width="100%"
+    let collapse_box = window.document.querySelector(".el-collapse");
+    (collapse_box as HTMLElement).style.width="100%"
+  }
+})
 
 
 // 选中的图号
