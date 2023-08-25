@@ -1,18 +1,30 @@
-{
-    "001": {
+[
+    {
         "title": "万代",
-        "path":"001.jpg"
+        "path": "001.jpg"
     },
-    "002": {
+    {
         "title": "steam",
-        "path":"002.jpg"
+        "path": "002.jpg"
     },
-    "003": {
+    {
         "title": "switch",
-        "path":"003.jpg"
+        "path": "003.jpg"
     },
-    "004": {
+    {
         "title": "playstation",
-        "path":"004.jpg"
+        "path": "004.jpg"
+    },
+    {
+        "title": "原神",
+        "path": "005.jpg"
+    },
+    {
+        "title": "王者荣耀",
+        "path": "006.jpg"
+    },
+    {
+        "title": "显卡",
+        "path": "007.jpg"
     }
-}
+]

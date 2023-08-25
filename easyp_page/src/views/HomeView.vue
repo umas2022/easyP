@@ -117,14 +117,14 @@ const ishandy = ref(false)
 // 初始化图片宽度
 onMounted(() => {
   console.log(window.innerWidth)
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 800) {
     ishandy.value = true
     let silder_box = window.document.querySelector(".slider-box");
-    (silder_box as HTMLElement).style.width="100%"
+    (silder_box as HTMLElement).style.width="90%"
     let result_box = window.document.querySelector(".result");
-    (result_box as HTMLElement).style.width="100%"
+    (result_box as HTMLElement).style.width="90%"
     let collapse_box = window.document.querySelector(".el-collapse");
-    (collapse_box as HTMLElement).style.width="100%"
+    (collapse_box as HTMLElement).style.width="90%"
   }
 })
 
