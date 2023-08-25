@@ -2,5 +2,17 @@
     "001": {
         "title": "万代",
         "path":"001.jpg"
+    },
+    "002": {
+        "title": "steam",
+        "path":"002.jpg"
+    },
+    "003": {
+        "title": "switch",
+        "path":"003.jpg"
+    },
+    "004": {
+        "title": "playstation",
+        "path":"004.jpg"
     }
 }
