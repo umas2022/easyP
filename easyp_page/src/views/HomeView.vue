@@ -91,7 +91,6 @@
       <h6>2.前端直接生成合成后的图片</h6>
       <h6>3.开一个图床存放更多的图</h6>
       <h6>4.上传自定义图片</h6>
-      <h6>5.适配手机</h6>
 
       <div>
         umas@2023
@@ -139,8 +138,8 @@ const base_width = ref(80)
 const item_width = ref(30)
 const item_height = ref(30)
 // 位置条件
-const item_top = ref(0)
-const item_left = ref(0)
+const item_top = ref(5)
+const item_left = ref(20)
 
 
 // 测试按钮
