@@ -3,6 +3,26 @@
         "title": "万代",
         "path": "001.jpg"
     },
+        {
+        "title": "寿屋",
+        "path": "014.jpg"
+    },
+    {
+        "title": "高达",
+        "path": "012.jpg"
+    },
+    {
+        "title": "初音",
+        "path": "013.jpg"
+    },
+    {
+        "title": "猫猫",
+        "path": "019.jpg"
+    },
+    {
+        "title": "显卡",
+        "path": "007.jpg"
+    },
     {
         "title": "steam",
         "path": "002.jpg"
@@ -24,7 +44,35 @@
         "path": "006.jpg"
     },
     {
-        "title": "显卡",
-        "path": "007.jpg"
+        "title": "泰拉瑞亚",
+        "path": "008.jpg"
+    },
+    {
+        "title": "喋血复仇",
+        "path": "009.jpg"
+    },
+    {
+        "title": "赛博朋克",
+        "path": "010.jpg"
+    },
+    {
+        "title": "gta6",
+        "path": "018.jpg"
+    },
+    {
+        "title": "宝可梦",
+        "path": "011.jpg"
+    },
+    {
+        "title": "嘉然",
+        "path": "015.jpg"
+    },
+    {
+        "title": "塔菲",
+        "path": "016.jpg"
+    },
+    {
+        "title": "可莉",
+        "path": "017.jpg"
     }
 ]

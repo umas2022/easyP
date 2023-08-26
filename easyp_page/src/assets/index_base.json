@@ -1,30 +1,34 @@
-{
-    "001": {
+[
+    {
         "title": "企鹅",
-        "path":"001.jpg"
+        "path": "001.jpg"
     },
-    "002": {
+    {
         "title": "圣女",
-        "path":"002.jpg"
+        "path": "002.jpg"
     },
-    "003": {
+    {
         "title": "滚",
-        "path":"003.jpg"
+        "path": "003.jpg"
     },
-    "004": {
+    {
         "title": "我要",
-        "path":"004.jpg"
+        "path": "004.jpg"
     },
-    "005": {
+    {
         "title": "吸",
-        "path":"005.jpg"
+        "path": "005.jpg"
     },
-    "006": {
+    {
         "title": "狂粉",
-        "path":"006.jpg"
+        "path": "006.jpg"
     },
-    "007": {
+    {
         "title": "熊猫",
-        "path":"007.jpg"
+        "path": "007.jpg"
+    },
+    {
+        "title": "上号",
+        "path": "008.jpg"
     }
-}
+]
