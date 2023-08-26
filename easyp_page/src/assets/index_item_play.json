@@ -3,7 +3,7 @@
         "title": "万代",
         "path": "001.jpg"
     },
-        {
+    {
         "title": "寿屋",
         "path": "014.jpg"
     },
@@ -24,11 +24,23 @@
         "path": "007.jpg"
     },
     {
+        "title": "switch",
+        "path": "021.jpg"
+    },
+    {
+        "title": "steam deck",
+        "path": "022.jpg"
+    },
+    {
+        "title": "ps5",
+        "path": "023.jpg"
+    },
+    {
         "title": "steam",
         "path": "002.jpg"
     },
     {
-        "title": "switch",
+        "title": "任天堂",
         "path": "003.jpg"
     },
     {
@@ -62,6 +74,10 @@
     {
         "title": "宝可梦",
         "path": "011.jpg"
+    },
+    {
+        "title": "raft",
+        "path": "020.jpg"
     },
     {
         "title": "嘉然",
