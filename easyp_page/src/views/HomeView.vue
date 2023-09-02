@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>easyP约饭快速出图</h1>
+    <h1>easyP 约饭速P</h1>
     <h3>前端没有图像处理功能，图片调整好之后手动截图保存</h3>
 
     <!-- <el-button @click="test_button">test</el-button> -->
@@ -38,7 +38,7 @@
       <img class="base" :src="'base/' + base_select" alt="" :style="{ width: base_width + '%' }">
       <div class="item-box"
         :style="{ width: item_width + '%', height: item_height + '%', top: item_top + '%', left: item_left + '%' }">
-        <img :src=" item_select" alt="">
+        <img :src="item_select" alt="">
       </div>
     </div>
 
@@ -52,7 +52,7 @@
         </template>
         <div class="img-box">
           <div class="img-each" v-for="(item, index) in index_base" :key="index">
-            <img :src="'base/' + item.path" alt="" @click="base_select = item.path">
+            <img :src="'base/' + item.path" alt="" @click="set_base(item.path)">
             <h3>{{ item.title }}</h3>
           </div>
         </div>
@@ -64,7 +64,7 @@
         </template>
         <div class="img-box">
           <div class="img-each" v-for="(item, index) in index_item_eat" :key="index">
-            <img :src="'item_eat/' + item.path" alt="" @click="item_select = 'item_eat/' +item.path">
+            <img :src="'item_eat/' + item.path" alt="" @click="set_item('item_eat/' + item.path)">
             <h3>{{ item.title }}</h3>
           </div>
         </div>
@@ -76,7 +76,19 @@
         </template>
         <div class="img-box">
           <div class="img-each" v-for="(item, index) in index_item_play" :key="index">
-            <img :src="'item_play/' + item.path" alt="" @click="item_select = 'item_play/' +item.path">
+            <img :src="'item_play/' + item.path" alt="" @click="set_item('item_play/' + item.path)">
+            <h3>{{ item.title }}</h3>
+          </div>
+        </div>
+      </el-collapse-item>
+
+      <el-collapse-item name="4">
+        <template #title>
+          <h2>选择子元（其他）</h2>
+        </template>
+        <div class="img-box">
+          <div class="img-each" v-for="(item, index) in index_item_other" :key="index">
+            <img :src="'item_other/' + item.path" alt="" @click="set_item('item_other/' + item.path)">
             <h3>{{ item.title }}</h3>
           </div>
         </div>
@@ -103,12 +115,14 @@
 
 
 <script lang="ts" setup>
-import { ref, Ref ,onMounted} from "vue"
+import { ref, Ref, onMounted } from "vue"
+import { ElMessage } from 'element-plus'
 
 
 import index_base from "@/assets/index_base.json"
 import index_item_eat from "@/assets/index_item_eat.json"
 import index_item_play from "@/assets/index_item_play.json"
+import index_item_other from "@/assets/index_item_other.json"
 
 
 // 显示模式切换(横屏/竖屏)
@@ -119,11 +133,11 @@ onMounted(() => {
   if (window.innerWidth < 800) {
     ishandy.value = true
     let silder_box = window.document.querySelector(".slider-box");
-    (silder_box as HTMLElement).style.width="90%"
+    (silder_box as HTMLElement).style.width = "90%"
     let result_box = window.document.querySelector(".result");
-    (result_box as HTMLElement).style.width="90%"
+    (result_box as HTMLElement).style.width = "90%"
     let collapse_box = window.document.querySelector(".el-collapse");
-    (collapse_box as HTMLElement).style.width="90%"
+    (collapse_box as HTMLElement).style.width = "90%"
   }
 })
 
@@ -131,6 +145,16 @@ onMounted(() => {
 // 选中的图号
 const base_select = ref("001.jpg")
 const item_select = ref("item_eat/001.jpg")
+const set_base = (value:string)=>{
+  base_select.value = value
+  let msg = "set"+JSON.stringify(value)
+  ElMessage.success(msg)
+}
+const set_item = (value:string)=>{
+  item_select.value = value
+  let msg = "set"+JSON.stringify(value)
+  ElMessage.success(msg)
+}
 
 
 // 宽度条件
@@ -144,7 +168,9 @@ const item_left = ref(20)
 
 // 测试按钮
 const test_button = () => {
-  console.log(index_base)
+  console.log("test")
+
+
 }
 
 
@@ -217,6 +243,7 @@ div.result {
 div.img-box {
   display: flex;
   flex-wrap: wrap; // 换行
+
   div.img-each {
     text-align: center;
     padding: 10px;
