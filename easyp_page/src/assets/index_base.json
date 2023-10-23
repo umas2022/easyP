@@ -24,15 +24,19 @@
         "path": "006.jpg"
     },
     {
-        "title": "熊猫",
+        "title": "熊猫推荐",
         "path": "007.jpg"
     },
     {
-        "title": "上号",
+        "title": "熊猫暗示",
         "path": "008.jpg"
     },
     {
         "title": "我就要",
         "path": "009.jpg"
+    },
+    {
+        "title": "柴郡就要",
+        "path": "010.jpg"
     }
 ]
